@@ -3,13 +3,15 @@
 #include <cstdlib>
 using namespace std;
 
-class Employee
+class Employee //This is parent class.
 {
+    //attributes.
     int id;
     int salary;
-
-public:
     bool gender = true;
+public:
+    //methods.
+    
     void setId(int inpId)
     {
         id = inpId;
@@ -21,7 +23,7 @@ public:
     }
 };
 
-class Manager : public Employee
+class Manager : public Employee //Child class from Employee
 {
     int pLanguages;
     int expLevel;
@@ -38,7 +40,7 @@ public:
     }
 };
 
-class Developer : public Employee
+class Developer : public Employee //Child class from Employee
 {
     int expYear;
     int portfolio;
@@ -68,8 +70,6 @@ int main()
     rafi.setId(10356);
     rafi.setLevel(2);
     rafi.setSalary(20000);
-
-    cout << rafi.gender<< endl;
 
     return 0;
 }
