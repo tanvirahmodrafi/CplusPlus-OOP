@@ -3,7 +3,7 @@
 #include <cstdlib>
 using namespace std;
 
-class Employee //This is parent class.
+class Employee //This is parent class
 {
     //attributes.
     int id;
